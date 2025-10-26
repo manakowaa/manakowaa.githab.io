@@ -1,1 +1,0 @@
-# manakowaa.githab.io
