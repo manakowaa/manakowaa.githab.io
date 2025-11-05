@@ -3,35 +3,60 @@
     <head>  
       <meta charset="UTF-8" /> 
       <title>Lenni</title> 
+      <link rel="stylesheet" href="styles/styles.css">
     </head>
-    <body>
-      <header>
-        <a href="#"></a>
-        <nav>
-            <a href="#">Мероприятия</a>
-            <a href="#">Блог</a>
-            <a href="#">О нас</a>
-            <a href="#">Контакты</a>
+    <body class="body">
+      <header class="page-header">
+        <a class="page-header__logo" href="#">Logo</a>
+        <nav class="page-header__nav">
+            <a class="page-header__link" href="#">Мероприятия</a>
+            <a class="page-header__link" href="#">Блог</a>
+            <a class="page-header__link" href="#">О нас</a>
+            <a class="page-header__link" href="#">Контакты</a>
         </nav>
+        <a class="page-header__user-link" href="#">Войти</a>
       </header>
-      <main>
-        <header>
-            <h1>АРТ ПРОСТРАНСТВО</h1>
+      <main class="main">
+        <div class="home">
+          <header class="main-header home__main-header">
+              <h1>АРТ-ПРОСТРАНСТВО</h1>
+              <img />
+              <p> для людей, горящих сердецем и делом
+                   место для настоящего</p>
         </header>
-        <section>
-            <h2>О нас</h2>
+
+        <section class="offers home__offers">
+            <h4 class="offers_title">Я ХОЧУ:</h4>
+            <div class="offers_btns">
+              <button class="offers_btn btn btn-red" type="button">Провести мероприятие</button>
+              <button class="offers_btn btn" type="button">Стать арендатором</button>
+            </div>
         </section>
-        <section>
-            <h2>Мероприятия</h2>
+
+        <section class="about home__about">
+            <h2 class="about__section-title section-title">О нас</h2>
+        <div class="about_container"></div>
+          </section>
+
+        <section class="upcoming home__upcoming">
+            <h2 class="upcoming_section-title section-title">Мероприятия</h2>
+            <div class="upcoming_container"></div>
         </section>
-        <section>
-            <h2>Блог</h2>
+
+        <section class="listing home__listing">
+            <h2 class="listing__section-title section-title">Блог</h2>
+            <div></div>
         </section>
-        <section>
-            <h2>Контакты</h2>
+
+        <section class="contacts home__contacts">
+            <h2 class="contacts__section-title section-title">Контакты</h2>
+            <div class="contacts__container"></div>
         </section>
+
+        <div class="doit"></div>
+        </div>
       </main>
-      <footer></footer>
+      <footer class="page-footer"></footer>
    
     </body>
  </html>
