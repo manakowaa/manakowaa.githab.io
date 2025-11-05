@@ -1,3 +1,64 @@
+html, 
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    max-width: 990px;
+    height: 638.5px;
+    padding: 247.5px 7012px 465px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.offers {       
+    max-width: 624px;
+    height: 128px;
+    padding: 986px 6784px 658px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about{
+    max-width: 624px;
+    height: 62px;
+    padding: 1314px 6522px 648px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upcoming {
+    max-width: 624px;
+    height: 62px;
+    padding: 3433px 1064px 648px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listing {
+    max-width: 624px;
+    height: 62px;
+    padding: 4613px 3223px 648px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts {
+    max-width: 624px;
+    height: 62px;
+    padding: 6138px 1698px 648px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 h1 {
     color: red;
 }
