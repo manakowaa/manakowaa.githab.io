@@ -5,24 +5,32 @@ body {
     padding: 0; 
 }
 body {
-    position: relative;
     box-sizing: border-box; 
     display: flex; 
     flex-direction: column; 
     min-height: 100vh; 
     padding-top: 147px;
-    font-family: @font1;
+    background-color: @gray;
+    background-image: url(../assets/images/events/noise.png);
+    background-position: 0 0, 0 0;
+    background-size: auto, 100% auto;
+    background-repeat: repeat, repeat-y ;
+    font-family: @font1; 
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    overflow-x: hidden;
 }
 
 main {
-    background-color: oklch(59.704% 0.11125 232.136);
     flex: 1 0 auto;
 }
 
 .page-footer {
     background-color: rgb(236, 236, 236); 
     height: 455px;
-    flex: 1 0 auto; 
+    flex: 0 0 auto; 
 }
 
 a {
