@@ -11,10 +11,10 @@ body {
     min-height: 100vh; 
     padding-top: 147px;
     background-color: @gray;
-    background-image: url(../assets/images/events/noise.png);
+    background-image: url(../assets/images/noise.png);
     background-position: 0 0, 0 0;
     background-size: auto, 100% auto;
-    background-repeat: repeat, repeat-y ;
+    background-repeat: repeat, repeat-y;
     font-family: @font1; 
     font-size: 16px;
     font-weight: 400;
@@ -43,3 +43,31 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+  font-family: @font1;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: #6c6c6c;
+  }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
