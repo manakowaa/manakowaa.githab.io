@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +23,36 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
+      <!-- <div class="page-header__right-block">
+          <a href="#" class="page-header__btn btn"> Войти </a>
+      </div> -->
+
       <div class="page-header__right-block">
-        <a href="#" class="page-header__btn btn"> Войти </a>
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user">
+            </use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
+    </div>
   </header>
+
+
   <main class="main">
     <div class="events">
       <section class="listing events__listing">
@@ -139,7 +165,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Фотосъемка</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -150,7 +176,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Видеосъемка</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -161,7 +187,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Организация питания</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -172,7 +198,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Декор</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -183,7 +209,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Звуковое сопровождение</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -194,7 +220,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Дополнительное освещение</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>
@@ -205,7 +231,7 @@
             </tr>
 
             <tr class="table__tr">
-              <th class="table__body-th">Ведущий мероприятия</th>
+              <th class="table__body-th">Клининг</th>
               <td class="table__td"></td>
               <td class="table__td">
                 <span class="table__ok"></span>

@@ -1,33 +1,58 @@
 .reserve {
-    display: grid; 
-    grid-template-columns: 405рх 1fr; 
-    /* grid-template-columns: 405px calc(89% - 405px);  две колонки: первая фиксированной ширины 405 пикселей, вторая занимает 89 процентов минус 405 пикселей */
-    gap: 65px 11%;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 405рх 1fr;
+  /* grid-template-columns: 405px calc(89% - 405px);  две колонки: первая фиксированной ширины 405 пикселей, вторая занимает 89 процентов минус 405 пикселей */
+  gap: 65px 11%;
+  grid-template-areas:
     "checks scheme"
     "order legend";
-    width: 100%;
-&__checks {
+  width: 100%;
+  @media @bw1340 {
+    gap: 65px 6.5%;
+    grid-template-columns: 340px calc(93.5% - 340px);
+  }
+  @media @bw1020 {
+    gap: 60px;
+    grid-template-columns: auto 390px;
+    grid-template-areas:
+      "scheme scheme"
+      "checks legend"
+      "checks order";
+  }
+  @media @bw768 {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "scheme"
+      "checks"
+      "legend"
+      "order";
+  }
+  @media @bw370 {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "scheme"
+      "checks"
+      "legend"
+      "order";
+  }
+
+  &__checks {
     grid-area: checks;
-  
-}
+  }
 
-&__scheme {
+  &__scheme {
     grid-area: scheme;
-}
+  }
 
-&__order {
+  &__order {
     grid-area: order;
+  }
 
- 
-}
-
-&__legend {
+  &__legend {
     grid-area: legend;
+  }
 
-}
-
-&__scheme-wrapper {
+  &__scheme-wrapper {
     position: relative;
     width: 100%;
 
@@ -53,7 +78,7 @@
     align-items: baseline;
   }
 
-    &__tickets-price {
+  &__tickets-price {
     display: flex;
     justify-content: end;
     align-items: baseline;
@@ -91,182 +116,182 @@
       font-size: 0.95em;
     }
   }
-    &--available {
-      &::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border-radius: 2px;
-      }
+  &--available {
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
     }
+  }
 
-    &--selected {
-      &::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border-radius: 2px;
-      }
+  &--selected {
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
     }
+  }
 
-    &--unavailable {
-      &::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        background-color: @gray_dark;
-        border-radius: 2px;
-      }
+  &--unavailable {
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: @gray_dark;
+      border-radius: 2px;
     }
+  }
 
-    &__check {
+  &__check {
     padding: 0;
-     margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+  }
 
-    &__scheme-title {
+  &__scheme-title {
     flex-direction: column;
-    box-sizing: border-box; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     background-color: @black;
     justify-content: center;
     margin: 80px auto 46px auto;
     color: @white;
     width: 162px;
     height: 34px;
-    }
+  }
 
-    &__legend-price {
-      color: @black;
-      font-family: @font1;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 25px;
-      letter-spacing: 0%;
-      text-align: right;
-      }
+  &__legend-price {
+    color: @black;
+    font-family: @font1;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
 
-      &__reservation {
-      color: @black;
-      font-family: @font1;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 25px;
-      letter-spacing: 0%;
-      text-align: left;
-      width: 218px;
-      height: 24px;
-      margin: 80px 0 31px 0;
-  } 
+  &__reservation {
+    color: @black;
+    font-family: @font1;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 218px;
+    height: 24px;
+    margin: 80px 0 31px 0;
+  }
 
   &__tickets-list {
-      color: @black;
-      font-family: @font1;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: 0%;
-      margin-bottom: 23px;
-  } 
-    &__legend-comment {
-      color: @black;
-      font-family: @font1;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 25px;
-      letter-spacing: 0%;
-      text-align: right;
+    color: @black;
+    font-family: @font1;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-bottom: 23px;
+  }
+  &__legend-comment {
+    color: @black;
+    font-family: @font1;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  &__legend-note {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 40px;
+    padding: 15px;
+    text-align: right;
+  }
+
+  &__note-list {
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    list-style: none;
+  }
+
+  &__note-list li {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__icon1 {
+    width: 24px;
+    height: 24px;
+    margin-right: -10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__icon2 {
+    width: 24px;
+    height: 24px;
+    margin-right: 23px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__icon3 {
+    width: 24px;
+    height: 24px;
+    margin-right: 29px;
+    margin-left: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__icon1 {
+    border: 1px solid @black;
+    background-color: transparent;
+  }
+
+  &__icon2 {
+    border: 1px solid @red;
+    background-color: transparent;
+  }
+
+  &__icon3 {
+    border: 1px solid @gray_dark;
+    background-color: @gray_dark;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    font-family: @font1;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 10px;
+    padding: 15px 131px 15px 131px;
+    margin: 40px auto 40px auto;
+    &--red {
+      background-color: @red;
+      border-color: @red;
+      color: @red;
     }
-
-&__legend-note {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  margin-top: 40px;
-  padding: 15px; 
-  text-align: right;
-}
-
-&__note-list {
-  justify-content: flex-end;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  list-style: none; 
-}
-
-&__note-list li {
-  margin-bottom: 18px; 
-  display: flex; 
-  justify-content: flex-end;
-  align-items: center;
-}
-
-&__icon1 {
-  width: 24px; 
-  height: 24px; 
-  margin-right: -10px; 
-  border-radius: 50%; 
-  display: inline-block;
-}
-
-&__icon2 {
-  width: 24px; 
-  height: 24px; 
-  margin-right: 23px; 
-  border-radius: 50%; 
-  display: inline-block;
-}
-
-&__icon3 {
-  width: 24px; 
-  height: 24px;
-  margin-right: 29px;
-  margin-left: 15px;
-  border-radius: 50%; 
-  display: inline-block; 
-}
-
-&__icon1 {
-  border: 1px solid @black; 
-  background-color: transparent; 
-}
-
-&__icon2 {
-  border: 1px solid @red; 
-  background-color: transparent; 
-}
-
-&__icon3 {
-border: 1px solid @gray_dark;
-background-color: @gray_dark; 
-}
-
-&__submit {
-display:flex; 
-justify-content: center;
-align-items: center;
-text-decoration: none;
-outline: none; 
-font-family: @font1; 
-font-size: 16px;  
-line-height: 20px; 
-gap: 10px;
-padding: 15px 131px 15px 131px;
-margin: 40px auto 40px auto;
-&--red {
-  background-color: @red;
-  border-color: @red;
-  color: @red;
-}
-&:hover {
-        background-color: @red_dark;
-        border-color:  @red_dark;
-      }
+    &:hover {
+      background-color: @red_dark;
+      border-color: @red_dark;
     }
   }
+}
