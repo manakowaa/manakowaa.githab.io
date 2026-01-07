@@ -1,6 +1,6 @@
 .listing {
   .container ();
-  display: flex;
+  display: block;
   flex-direction: column;
   &__events-list {
     display: flex;
@@ -27,6 +27,7 @@
 
     @media @bw650 {
       margin: 0 0 -60px;
+      justify-content: center;
     }
   }
   &__event-card {
@@ -54,6 +55,24 @@
     @media @bw650 {
       width: 100%;
       margin: 0 0 60px;
+      max-width: 500px;
     }
+  }
+  &__link {
+    color: @black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 88px 0 0 40px;
+    text-decoration: none;
+    font-family: @font1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    align-items: center;
+    @media @bw1170 {
+    box-sizing: border-box; 
+     max-width: 708px;
+}
   }
 }

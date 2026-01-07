@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="show-event-popup">
+<html lang="ru">
 <!-- class="show-event-popup" -->
 
 <head>
@@ -61,12 +61,55 @@
           <div class="about__block1"></div>
           <div class="about__block2">
             <picture class="about__picture">
+              <!-- <source
+          type="image/webp"
+          media="(max-width: 500px)"
+          srcset="assets/images/events/pic.webp"
+        />
+        <source
+          media="(max-width: 500px)"
+          srcset="assets/images/events/pic.jpg"
+        />
+
+        <source
+          type="image/webp"
+          media="(max-width: 1169px)"
+          srcset="assets/images/events/pic_tablet.webp"
+        />
+        <source
+          media="(max-width: 1169px)"
+          srcset="assets/images/events/pic_tablet.jpg"
+        />
+
+        <source type="image/webp" srcset="assets/images/events/pic.webp" /> -->
+
               <img src=assets/images/events/pic.jpg class="about__img" alt="pic">
             </picture>
             <h3 class="about__title">
               Мы предоставляем площади для вашего мероприятия
             </h3>
             <picture class="about__picture2">
+              <!-- <source
+          type="image/webp"
+          media="(max-width: 450px)"
+          srcset="assets/images/events/pic2.webp"
+        />
+        <source
+          media="(max-width: 450px)"
+          srcset="assets/images/events/pic2.jpg"x
+        />
+
+        <source
+          type="image/webp"
+          media="(max-width: 1169px)"
+          srcset="assets/images/events/pic2_tablet.webp"
+        />
+        <source
+          media="(max-width: 1169px)"
+          srcset="assets/images/events/pic2_tablet.jpg"
+        />
+
+        <source type="image/webp" srcset="assets/images/events/pic2.webp" /> -->
               <img src=assets/images/events/pic2.jpg class="about__img" alt="pic2">
             </picture>
             <p class="about__text">
@@ -88,18 +131,27 @@
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/events/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
+
+              <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/theatre.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg" />
+
+              <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.jpg" />
+
+              <source type="image/webp" srcset="assets/images/blog/theatre.webp" />
+              <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
             <time datetime="2024-11-26T00:00" class="article-card__time">26.11.2024</time>
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
-              <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+
+              <span class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="91" height="60">
                   <use xlink:href="assets/icons/symbols.svg#arrow"></use>
                 </svg>
-              </div>
+              </span>
             </a>
             <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было </p>
           </div>
@@ -107,18 +159,27 @@
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/events/выставка VR.jpg" alt="VR" class="article-card__img" />
+
+              <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/выставка VR.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/выставка VR.jpg" />
+
+              <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/выставка VR_tablet.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/выставка VR_tablet.jpg" />
+
+              <source type="image/webp" srcset="assets/images/blog/выставка VR.webp" />
+              <img src="assets/images/blog/выставка VR.jpg" alt="VR" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
             <time datetime="2024-11-05T00:00" class="article-card__time">05.11.2024</time>
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Выставка VR в Томске</h4>
-              <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+
+              <span class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="91" height="60">
                   <use xlink:href="assets/icons/symbols.svg#arrow"></use>
                 </svg>
-              </div>
+              </span>
             </a>
             <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
           </div>
@@ -126,23 +187,31 @@
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/events/rocking radio.jpg" alt="Rocking radio" class="article-card__img" />
+
+              <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/rocking radio.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/rocking radio.jpg" />
+
+              <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/rocking radio_tablet.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/rocking radio_tablet.jpg" />
+
+              <source type="image/webp" srcset="assets/images/blog/rocking radio.webp" />
+              <img src="assets/images/blog/rocking radio.jpg" alt="Rocking radio" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
             <time datetime="2024-11-01T00:00" class="article-card__time">01.11.2024</time>
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
-              <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+
+              <span class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="91" height="60">
                   <use xlink:href="assets/icons/symbols.svg#arrow"></use>
                 </svg>
-              </div>
+              </span>
             </a>
             <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
           </div>
         </article>
-
       </div>
 
       <a href="#" class="listing__link link">Смотреть все</a>
