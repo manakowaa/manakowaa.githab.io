@@ -1,6 +1,75 @@
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 100px 0;
+    @media @bw768 {
+    padding: 80px 0;
+    }
     &__listing {
         margin-bottom: 95px;
     }
+    &__contacts {
+        margin-bottom: 95px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__picrure {
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: box-shadow 0.2s;
+    overflow: hidden;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+    }
+}
+&__art {
+color: @black;
+font-family: @font2;
+font-size: 45px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+@media @bw1340 {
+font-size: 35px;
+line-height: 45px;
+}
+@media @bw768 {
+font-size: 30px;
+line-height: 38px;
+}
+@media @bw370 {
+font-size: 13px;
+line-height: 17px;
+}
+}
+
+&__paragraph {
+color: @black;
+font-family: @font2;
+font-size: 45px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+@media @bw1340 {
+font-size: 35px;
+line-height: 45px;
+}
+@media @bw768 {
+font-size: 30px;
+line-height: 38px;
+}
+@media @bw370 {
+font-size: 13px;
+line-height: 17px;
+}
+}
 }

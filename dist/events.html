@@ -47,7 +47,7 @@
             </use>
           </svg>
         </a>
-        <button type="button" class="page-header__nav-toggle"></button>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
   </header>
@@ -139,8 +139,8 @@
                 <source type="image/webp" srcset="assets/images/events/thehatters.webp" />
                 <img src="assets/images/events/thehatters.jpg" alt="thehatters" class="event-card__img" />
               </picture>
-              <h4 class="event-card__title">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</h4>
-              <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
+              <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
+              <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко.</p>
               <time datetime="2024-12-27T20:00" class="event-card__time"> 27.12.2024 | начало 10.00 </time>
             </a>
           </article>
@@ -281,10 +281,10 @@
   </main>
   <footer class="page-footer"></footer>
 
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__x-btn x-btn">
+        <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
           <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -390,12 +390,15 @@
 
           <div class="form__btns">
             <button type="submit" class="btn form__submi form__submit--w50">Отправить</button>
-            <button type="button" class="form__close-btn">Закрыть</button>
+            <button type="button" class="form__close-btn js-ppCloseBtn">Закрыть</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
+
+  <script src="scripts/main.min.js"></script>
 
 </body>
 

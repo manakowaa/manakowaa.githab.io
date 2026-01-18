@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="show-nav">
 <!-- class="show-event-popup" -->
 
 <head>
@@ -48,7 +48,7 @@
             </use>
           </svg>
         </a>
-        <button type="button" class="page-header__nav-toggle"></button>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
   </header>
@@ -56,12 +56,42 @@
 
   <main class="main">
     <div class="home">
-      <section class="about">
-        <div class="about__container">
-          <div class="about__block1"></div>
-          <div class="about__block2">
-            <picture class="about__picture">
-              <!-- <source
+      <header class="main-header home__main-header">
+        <div class="main-header__container"></div>
+        <h1 class="main-header home__art">АРТ — ПРОСТРАНСТВО</h1>
+        <img class="main-header__Lenni" src="assets/icons/LENNI.svg" alt="Lenni">
+
+
+        <p class="home__paragraph">
+          ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ
+          <br>
+          МЕСТО ДЛЯ НАСТОЯЩЕГО
+        </p>
+    </div>
+    </header>
+    <!-- prettier-ignore -->
+
+    <section class="offers home__offers">
+      <h4 class="offers__title">Я ХОЧУ:</h4>
+
+      <div class="offers__btns">
+        <button type="button" class="offers__btn btn btn--red" id="js-eventOpenBtn">
+          Провести мероприятие
+        </button>
+
+        <button type="button" class="offers__btn btn">
+          Стать арендатором
+        </button>
+      </div>
+    </section>
+
+    <!-- prettier-ignore -->
+    <section class="about">
+      <div class="about__container">
+        <div class="about__block1"></div>
+        <div class="about__block2">
+          <picture class="about__picture">
+            <!-- <source
           type="image/webp"
           media="(max-width: 500px)"
           srcset="assets/images/events/pic.webp"
@@ -83,13 +113,13 @@
 
         <source type="image/webp" srcset="assets/images/events/pic.webp" /> -->
 
-              <img src=assets/images/events/pic.jpg class="about__img" alt="pic">
-            </picture>
-            <h3 class="about__title">
-              Мы предоставляем площади для вашего мероприятия
-            </h3>
-            <picture class="about__picture2">
-              <!-- <source
+            <img src=assets/images/events/pic.jpg class="about__img" alt="pic">
+          </picture>
+          <h3 class="about__title">
+            Мы предоставляем площади для вашего мероприятия
+          </h3>
+          <picture class="about__picture2">
+            <!-- <source
           type="image/webp"
           media="(max-width: 450px)"
           srcset="assets/images/events/pic2.webp"
@@ -110,18 +140,117 @@
         />
 
         <source type="image/webp" srcset="assets/images/events/pic2.webp" /> -->
-              <img src=assets/images/events/pic2.jpg class="about__img" alt="pic2">
-            </picture>
-            <p class="about__text">
-              И оказываем помощь с организацией, если вам это нужно. Наша цель:
-              вовлечь в культурную жизнь города как можно больше людей, помочь молодым
-              ребятам сделать первые шаги к своей мечте и рассказать всем о том, что
-              их волнует.
-            </p>
+            <img src=assets/images/events/pic2.jpg class="about__img" alt="pic2">
+          </picture>
+          <p class="about__text">
+            И оказываем помощь с организацией, если вам это нужно. Наша цель:
+            вовлечь в культурную жизнь города как можно больше людей, помочь молодым
+            ребятам сделать первые шаги к своей мечте и рассказать всем о том, что
+            их волнует.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="upcoming home__upcoming">
+      <div class="upcoming__wrapper">
+        <div class="upcoming__container">
+          <h2 class="upcoming__title section-title">
+            Мероприятия
+          </h2>
+          <div class="upcoming__swiper swiper swiper--3s js-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="event-card ">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <source type="image/webp" media="(max-width: 649px)" srcset="assets/images/events/Nirvana.webp" />
+                      <source media="(max-width: 649px)" srcset="assets/images/events/Nirvana.jpg" />
+
+                      <source type="image/webp" srcset="assets/images/events/Nirvana.webp" />
+                      <img src="assets/images/events/Nirvana.jpg" alt="nirvana" class="event-card__img" />
+                    </picture>
+                    <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+                    <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                    <time datetime="2022-12-07T18:00" class="event-card__time"> 07.12.2022 | начало 18.00 </time>
+                  </a>
+                </article>
+
+              </div>
+              <div class="swiper-slide">
+                <article class="event-card ">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <source type="image/webp" media="(max-width: 649px)" srcset="assets/images/events/Staff.webp" />
+                      <source media="(max-width: 649px)" srcset="assets/images/events/Staff.jpg" />
+
+                      <source type="image/webp" srcset="assets/images/events/Staff.webp" />
+                      <img src="assets/images/events/Staff.jpg" alt="stuff" class="event-card__img" />
+                    </picture>
+                    <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                    <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                    <time datetime="2022-12-14T18:30" class="event-card__time"> 14.12.2022 | начало 18.30 </time>
+                  </a>
+                </article>
+
+              </div>
+
+              <div class="swiper-slide">
+                <article class="event-card ">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <source type="image/webp" media="(max-width: 649px)" srcset="assets/images/events/Thebest.webp" />
+                      <source media="(max-width: 649px)" srcset="assets/images/events/Thebest.jpg" />
+
+                      <source type="image/webp" srcset="assets/images/events/Thebest.webp" />
+                      <img src="assets/images/events/Thebest.jpg" alt="Thebest" class="event-card__img" />
+                    </picture>
+                    <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                    <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка</p>
+                    <time datetime="2022-12-16T20:00" class="event-card__time"> 16.12.2022 | начало 20.00 </time>
+                  </a>
+                </article>
+
+              </div>
+
+              <div class="swiper-slide">
+                <article class="event-card ">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <source type="image/webp" media="(max-width: 649px)" srcset="assets/images/events/TheMalevichexhibition.webp" />
+                      <source media="(max-width: 649px)" srcset="assets/images/events/TheMalevichexhibition.jpg" />
+
+                      <source type="image/webp" srcset="assets/images/events/TheMalevichexhibition.webp" />
+                      <img src="assets/images/events/TheMalevichexhibition.jpg" alt="Malevich" class="event-card__img" />
+                    </picture>
+                    <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                    <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+                    <time datetime="2024-12-23T20:00" class="event-card__time"> 23.12.2024 | начало 20.00 </time>
+                  </a>
+                </article>
+
+              </div>
+            </div>
+            <footer class="swiper-footer">
+              <button type="button" class="swiper-arrow-prev arrow arrow--left">
+                <svg class="arrow__icon" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="swiper-pagination"></div>
+              <button type="button" class="swiper-arrow-next arrow">
+                <svg class="arrow__icon" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </button>
+            </footer>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+
 
     <!-- prettier-ignore -->
     <section class="listing home__listing">
@@ -217,12 +346,124 @@
       <a href="#" class="listing__link link">Смотреть все</a>
     </section>
 
+
+    <!-- prettier-ignore -->
+
+    <section class="contacts home__contacts">
+      <h2 class="contacts__title section-title">Контакты</h2>
+
+      <div class="contacts__wrapper">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <div class="contacts__item-mark">
+
+              <img class="contacts__item-icon" src="assets/icons/location.svg" alt="location">
+
+              <!-- <svg class="contscts__item-icon" width="18" height="18">
+                    <use xlink:href="assets/icons/symbols.svg#location"
+                    ></use>
+                    </svg> -->
+            </div>
+            <div class="contacts__item-content">
+
+              <h4 class="contacts__item-title">
+                Томск, Красноармейская 146
+              </h4>
+
+              <div class="contacts__item-info">
+                2 этаж
+              </div>
+
+              <div class="contscts__item-info">
+                оф. 207-208
+              </div>
+            </div>
+
+          </li>
+
+          <li class="contacts__item">
+
+            <div class="contacts__item-mark">
+
+              <img class="contacts__item-icon" src="assets/icons/home.svg" alt="home">
+
+              <!-- <svg class="contacts__item-icon" width="18" height="21">
+                    <use 
+                    xlink:href="assets/icons/symbols.svg#home.svg"
+                    ></use>
+                    </svg> -->
+            </div>
+
+            <div class="contacts__item-content">
+
+              <h4 class="contacts__item-title">
+                Отдел аренды
+              </h4>
+
+              <div class="contacts__item-info">
+
+                <a href="tel:+73822907256">8 (3822) 90-72-56</a>
+
+              </div>
+
+              <div class="contscts__item-info">
+
+                <a href="mailto:idat@tusur.ru">idat@tusur.ru</a>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="contacts__item">
+
+            <div class="contacts__item-mark">
+
+              <img class="contacts__item-icon" src="assets/icons/star.svg" alt="home">
+
+              <!-- <svg class="contacts__item-icon" width="18" height="21">
+                    <use 
+                    xlink:href="assets/icons/symbols.svg#star"
+                    ></use>
+                    </svg> -->
+            </div>
+
+            <div class="contacts__item-content">
+
+              <h4 class="contacts__item-title">
+                Отдел мероприятий
+              </h4>
+
+              <div class="contacts__item-info">
+
+                <a href="tel:+73822907256">8 (3822) 90-72-56</a>
+
+              </div>
+
+              <div class="contscts__item-info">
+
+                <a href="mailto:idat@tusur.ru">idat@tusur.ru</a>
+
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="contacts__map" id="js-contactsMap"></div>
+      </div>
+
+
+
+
+    </section>
+
+    </div>
   </main>
   <footer class="page-footer"></footer>
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__x-btn x-btn">
+        <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
           <svg class="x-btn__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -328,12 +569,20 @@
 
           <div class="form__btns">
             <button type="submit" class="btn form__submi form__submit--w50">Отправить</button>
-            <button type="button" class="form__close-btn">Закрыть</button>
+            <button type="button" class="form__close-btn js-ppCloseBtn">Закрыть</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
+
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/main.min.js"></script>
 
 </body>
 
