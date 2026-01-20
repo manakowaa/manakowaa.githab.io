@@ -90,6 +90,7 @@
     line-height: 19px;
   }
   }
+  
 
   &__map {
     // position: relative;
@@ -116,13 +117,14 @@
     }
   }
   &__item-mark {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 0;
-    transition: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
   }
   &__item-icon {
+    width: 47px;
+    height: 47px;
     min-width: 110px;
     min-height: 110px;
     object-fit: contain;
