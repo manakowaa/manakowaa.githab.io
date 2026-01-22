@@ -280,7 +280,7 @@ if (mobileMask.length) {
   mobileMask.mask('+7 (000) 000 00 00', { placeholder: "+7 (___) ___ __ __" });
 }
 
- dateField = $(".js-dateField");
+ const dateField = $(".js-dateField");
 
 if (dateField.length) {
 
@@ -305,10 +305,14 @@ if (dateField.length) {
     };
 
     new AirDatepicker(dateInput[0], dateConfig);
+
+    
   };
 
   $.each(dateField, function (i) {
     pickerInit($(this));
   });
 }
+
+
 })();
