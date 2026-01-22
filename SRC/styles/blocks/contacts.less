@@ -27,14 +27,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 67px;
-    gap: 54px;
-    @media @bw451 {
-    gap: 30px;
+    gap: 49px;
+  @media @bw370 {
+    gap: 15px;
   }
-    @media @bw370 {
-    gap: 10px;
-  }
-  }
+}
   &__item-title {
     width: 306px;
     height: 27px;
@@ -118,7 +115,7 @@
   }
   &__item-mark {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 60%;
   align-items: center;
 
   }

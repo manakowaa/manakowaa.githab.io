@@ -1,7 +1,11 @@
 <div class="pp" id="js-eventPP">
   <div class="pp__wrapper">
     <div class="pp__sticky-close">
-      <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
+      <button
+        type="button"
+        title="Закрыть"
+        class="pp__x-btn x-btn js-ppCloseBtn"
+      >
         <svg class="x-btn__icon" width="24" height="24">
           <use xlink:href="assets/icons/symbols.svg#x"></use>
         </svg>
@@ -12,12 +16,12 @@
         Заполните форму<br />
         и мы подберем площадку
       </h2>
-      <form class="pp__form form">
+      <form class="pp__form form" id="js-eventForm">
         <div class="form__list">
           <div class="field form__field form__field--w50">
             <h5 class="field__title">Формат мероприятия:</h5>
 
-            <div class="radio field__radio">
+            <div class="field__radio radio">
               <label class="radio__item">
                 <input
                   class="radio__input"
@@ -75,26 +79,39 @@
               </select>
             </label>
 
-            <div class="field form__field form__field--m0">
+            <!-- <div class="form__field field fieid js-dateField"> -->
+            <div class="field form__field form__field--m0 js-dateField">
               <h5 class="field__title">Дата проведения:</h5>
-              <div class="field__gate">
+
+              <div class="field__date">
                 <div class="field__date-inputs">
                   <input
-                    class="field__date-input"
+                    class="field__date-input js-dateDay"
                     type="text"
                     placeholder="ДД"
+                    readonly
                   />
                   <input
-                    class="field__date-input"
+                    class="field__date-input js-dateMonth"
                     type="text"
                     placeholder="ММ"
+                    readonly
                   />
                   <input
-                    class="field__date-input field__date-input--year"
+                    class="field__date-input field__date-input--year js-dateYear"
                     type="text"
                     placeholder="ГГГГ"
+                    readonly
                   />
                 </div>
+
+                <input
+                  class="field__date-picker js-dateInput"
+                  type="text"
+                  name="date"
+                  readonly
+                  required
+                />
               </div>
             </div>
           </div>
@@ -127,7 +144,7 @@
           <label class="field form__field form__field--w50">
             <span class="field__label">Телефон*</span>
             <input
-              class="field__input"
+              class="field__input js-mobileMask"
               type="tel"
               placeholder="Телефон"
               name="phone"
@@ -152,6 +169,7 @@
           <textarea class="field__textarea" name="Пожелания"></textarea>
         </label>
 
+        <div class="form__check-list">
         <label class="check form__check">
           <input
             type="checkbox"
@@ -166,10 +184,14 @@
             использования персональных данных
           </span>
         </label>
-
+      </div>
         <div class="form__btns">
-          <button type="submit" class="btn form__submi form__submit--w50">Отправить</button>
-          <button type="button" class="form__close-btn js-ppCloseBtn">Закрыть</button>
+          <button type="submit" class="btn form__submi form__submit--w50">
+            Отправить
+          </button>
+          <button type="button" class="form__close-btn js-ppCloseBtn">
+            Закрыть
+          </button>
         </div>
       </form>
     </div>
