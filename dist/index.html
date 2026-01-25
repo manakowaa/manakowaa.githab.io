@@ -6,10 +6,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni Art</title>
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@400,500;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.min.css">
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/assets/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+
+  <meta name="msapplication-TileColor" content="#dedede">
+  <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#bc3324">
+
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+
+  <meta name="theme-color" content="#dedede">
+
+
 </head>
 
 <body class="body">
@@ -152,6 +189,14 @@
       </div>
       <div class="about__container">
         <div class="about__block3">
+
+          <!--   
+  <div class="about__picture3">
+  <svg class="about__guadr1" width="928" hedith="246"></svg> -->
+
+
+
+
           <img class="about__img" src="assets/images/events/pic3.jpg" alt="Фото с одного из наших проектов — оживлённый атриум с посетителями">
           <div class="about__img-red-element"></div>
         </div>
@@ -473,14 +518,74 @@
         <div class="contacts__map" id="js-contactsMap"></div>
       </div>
 
-
-
+      <div contacts__text>
+        <p class="contacts__text">Просто делайте, что нравится, а мы вам поможем
+        </p>
+      </div>
 
     </section>
 
     </div>
   </main>
-  <footer class="page-footer"></footer>
+
+  <footer class="page-footer">
+
+
+    <div class="page-footer__wrapper"></div>
+    <nav class="page-footer__nav">
+
+      <a href="#" class="page-footer__nav-link">Календарь мероприятий</a>
+      <a href="#" class="page-footer__nav-link">Провести мероприятие</a>
+      <a href="#" class="page-footer__nav-link">Стать арендатором</a>
+      <a href="#" class="page-footer__nav-link">Наши проекты</a>
+      <a href="#" class="page-footer__nav-link">Контакты</a>
+    </nav>
+
+    <form action="'https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
+      <h4 class="subscribe-form__title">
+        Подпишись и будь в курсе происходящего
+      </h4>
+
+      <div class="subscribe-form__wrapper">
+        <div class="subscribe-form__field-wrapper">
+          <input type="email" name="email" placeholder="Email" class="subscribe-form__input" required id="js-subscribeEmail" />
+        </div>
+
+        <button type="submit" class="subscribe-form__submit">
+          Подписаться
+        </button>
+      </div>
+
+      <label class="subscribe-form__check check">
+        <input type="checkbox" name="agree" class="check__input" required checked />
+        <span class="check__mark"></span>
+        <span class="check__label check__label--s">
+          Согласен на обработку персональных данных
+        </span>
+      </label>
+      <div class="page-footer__Millenials">© Millennials 2025</p>
+      </div>
+      <div class="page-footer__signature"></div>
+
+      <nav class="page-footer__signature">
+
+        <a href="#" class="page-footer__signature-link">Политика конфеденциальности</a>
+        <a href="#" class="page-footer__signature-link">Cookies</a>
+        <a href="#" class="page-footer__signature-insta">??
+          svg
+
+        </a>
+        <a href="#" class="page-footer__signature-VK">??
+
+          svg
+        </a>
+        <a href="#" class="page-footer__signature-link">Создание и продвижение</a>
+        svg
+      </nav>
+    </form>
+
+
+  </footer>
   <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
@@ -594,7 +699,7 @@
             </label>
           </div>
           <div class="form__btns">
-            <button type="submit" class="btn form__submi form__submit--w50">
+            <button type="submit" class="btn form__submit form__submit--w50">
               Отправить
             </button>
             <button type="button" class="form__close-btn js-ppCloseBtn">

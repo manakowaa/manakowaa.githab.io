@@ -14,7 +14,7 @@
       flex-wrap: wrap;
       gap: 100px;
     }
-      @media @bw500 {
+    @media @bw500 {
       flex-wrap: wrap;
       gap: 100px;
     }
@@ -28,10 +28,10 @@
     align-items: center;
     margin-bottom: 67px;
     gap: 49px;
-  @media @bw370 {
-    gap: 15px;
+    @media @bw370 {
+      gap: 15px;
+    }
   }
-}
   &__item-title {
     width: 306px;
     height: 27px;
@@ -45,24 +45,24 @@
     line-height: 27px;
     letter-spacing: 0%;
     text-align: left;
-     @media @bw1340 {
-    width: 293px;
-    font-size: 20px;
-  }
-   @media @bw768 {
-    width: 273px;
-    height: 24px;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: 700;
-  }
+    @media @bw1340 {
+      width: 293px;
+      font-size: 20px;
+    }
+    @media @bw768 {
+      width: 273px;
+      height: 24px;
+      line-height: 25px;
+      font-size: 18px;
+      font-weight: 700;
+    }
     @media @bw370 {
-    width: 212px;
-    height: 19px;
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 600;
-  }
+      width: 212px;
+      height: 19px;
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 600;
+    }
   }
   &__item-info {
     width: 236px;
@@ -81,13 +81,12 @@
     text-decoration: none;
     cursor: pointer;
     @media @bw370 {
-    width: 113px;
-    height: 19px;
-    font-size: 14px;
-    line-height: 19px;
+      width: 113px;
+      height: 19px;
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
-  }
-  
 
   &__map {
     // position: relative;
@@ -114,10 +113,9 @@
     }
   }
   &__item-mark {
-  display: grid;
-  grid-template-columns: 1fr 60%;
-  align-items: center;
-
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    align-items: center;
   }
   &__item-icon {
     width: 47px;
@@ -125,10 +123,57 @@
     min-width: 110px;
     min-height: 110px;
     object-fit: contain;
-     @media @bw370 {
+    @media @bw370 {
       max-width: 65px;
       height: 65px;
       object-fit: contain;
+    }
   }
-}
+
+  &__text {
+    flex-direction: column;
+    font-family: @font3;
+    font-style: Bold;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: right;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    margin: 0;
+    @media @bw1340 {
+      width: 1519px;
+      height: 108px;
+      font-size: 90px;
+      margin-bottom: 250px;
+    }
+      @media @bw960 {
+      width: 1519px;
+      height: 108px;
+      font-size: 80px;
+      margin-bottom: 250px;
+    }
+    @media @bw768 {
+      width: 703px;
+      height: 96px;
+      font-size: 70px;
+      margin-bottom: 350px;
+    }
+    @media @bw500 {
+      width: 308px;
+      height: 48px;
+      font-size: 40px;
+      margin-bottom: 250px;
+      margin-top: 15px;
+    }
+    @media @bw370 {
+      width: 308px;
+      height: 48px;
+      font-size: 40px;
+      margin-bottom: 250px;
+      margin-top: 15px;
+    }
+  }
 }

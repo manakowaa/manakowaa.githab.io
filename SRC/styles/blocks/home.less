@@ -1,6 +1,5 @@
 .home {
-    display: flex;
-    justify-content: center;
+    display: block;
     align-items: center;
     padding: 100px 0;
     @media @bw768 {
@@ -28,6 +27,8 @@
     }
 }
 &__art {
+max-width: 100%;
+height: auto;
 color: @black;
 font-family: @font2;
 font-size: 45px;
@@ -36,6 +37,7 @@ line-height: 58px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
+margin-bottom: 70px;
 @media @bw1340 {
 font-size: 35px;
 line-height: 45px;
@@ -43,10 +45,12 @@ line-height: 45px;
 @media @bw768 {
 font-size: 30px;
 line-height: 38px;
+margin-bottom: 50px;
 }
 @media @bw370 {
 font-size: 13px;
 line-height: 17px;
+margin-bottom: 29px;
 }
 }
 
@@ -59,6 +63,7 @@ line-height: 58px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
+margin-top: 70px;
 @media @bw1340 {
 font-size: 35px;
 line-height: 45px;
@@ -66,10 +71,12 @@ line-height: 45px;
 @media @bw768 {
 font-size: 30px;
 line-height: 38px;
+margin-top: 50px;
 }
 @media @bw370 {
 font-size: 13px;
 line-height: 17px;
+margin-top: 28px;
 }
 }
 }
