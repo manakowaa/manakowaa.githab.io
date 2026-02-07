@@ -74,7 +74,14 @@
               ])
           </div>
           <br />
-          <a href="#" class="listing__link link">Показать еще</a>
+          <a href="#" class="listing__more">
+             <span class="listing__link1 link1">Показать еще</span>
+          <span class="listing__arrow arrow">
+        <svg class="arrow__icon" width="91" height="60">
+          <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+        </svg>
+      </span>
+          </a>
         </section>
         <section class="events__services">
           <h2 class="events__section-title section-title section-title--sub">
@@ -97,40 +104,37 @@
 
 
 
-       <div class="contacts__wrapper">
-        <ul class="contacts__list">
-            <li class="contacts__item">
-                <div class="contacts__item-mark">
+       <div class="events__wrapper">
+        <ul class="events__list">
+            <li class="events__item-prices">
+                <div class="events__item-mark">
 
-                    <img class="contacts__item-icon" src="assets/icons/location.svg" alt="location">
+                    <img class="events__item-icon" src="assets/icons/location.svg" alt="location">
                     
                     <!-- <svg class="contscts__item-icon" width="18" height="18">
                     <use xlink:href="assets/icons/symbols.svg#location"
                     ></use>
                     </svg> -->
                  </div>
-                 <div class="contacts__item-content">
+                 <div class="events__item-content">
 
-                    <h4 class="contacts__item-title">
-                        Томск, Красноармейская 146
+                    <h4 class="events__item-title">
+                        Цены
                     </h4>
-
-                    <div class="contacts__item-info">
-                        2 этаж
-                    </div>
-
-                    <div class="contscts__item-info">
-                        оф. 207-208
-                    </div>
+                      <br>
+                     <span class="events__item-info">
+                      Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.
+                    </span>
+                    
                 </div>
 
             </li>
 
-            <li class="contacts__item">
+            <li class="events__item-contacts">
 
-                <div class="contacts__item-mark">
+                <div class="events__item-mark">
 
-                    <img class="contacts__item-icon" src="assets/icons/home.svg" alt="home">
+                    <img class="events__item-icon" src="assets/icons/contact.svg" alt="contact">
                     
                     <!-- <svg class="contacts__item-icon" width="18" height="21">
                     <use 
@@ -139,19 +143,22 @@
                     </svg>
                     </div> -->
 
-                    <div class="contacts__item-content">
+                    <div class="events__item-content">
 
-                     <h4 class="contacts__item-title">
-                        Отдел аренды
+                     <h4 class="events__item-title">
+                        Контакты
                     </h4>
-
-                    <div class="contacts__item-info">
+                
+           
+                    <span class="events__item-p">Отдел организации мероприятий</span>
+              
+                    <div class="events__item-number">
 
                      <a href="tel:+73822907256">8 (3822) 90-72-56</a>
 
                     </div>
 
-                    <div class="contscts__item-info">
+                    <div class="events__item-email">
 
                      <a href="mailto:idat@tusur.ru">idat@tusur.ru</a>
 
@@ -159,11 +166,11 @@
                 </div>
             </li>
 
-                <li class="contacts__item">
+                <li class="events__item-advantage">
 
-                <div class="contacts__item-mark">
+                <div class="events__item-mark">
 
-                    <img class="contacts__item-icon" src="assets/icons/star.svg" alt="home">
+                    <img class="events__item-icon" src="assets/icons/handshake.svg" alt="handshake">
                     
                     <!-- <svg class="contacts__item-icon" width="18" height="21">
                     <use 
@@ -172,23 +179,15 @@
                     </svg>
                     </div> -->
 
-                    <div class="contacts__item-content">
+                    <div class="events__item-content">
                         
-                     <h4 class="contacts__item-title">
-                        Отдел мероприятий
+                     <h4 class="events__item-title">
+                        Преимущество
                     </h4>
-
-                    <div class="contacts__item-info">
-
-                     <a href="tel:+73822907256">8 (3822) 90-72-56</a>
-
-                    </div>
-
-                    <div class="contscts__item-info">
-
-                     <a href="mailto:idat@tusur.ru">idat@tusur.ru</a>
-                     
-                    </div>
+                    <br>
+                    <span class="events__item-info">
+                      Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.
+                    </span>
                 </div>
             </li>
 
@@ -198,8 +197,7 @@
         
     </div>
     </main>
-    <footer class="page-footer"></footer>
-    <!-- @@include('blocks/page-footer.html')  -->
+    @@include('blocks/page-footer.html') 
     @@include('blocks/event-pp.html')
 
     <script src="scripts/jquery-3.7.1.min.js"></script>
