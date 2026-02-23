@@ -9,7 +9,7 @@
 
   export default {
     components: {
-      ListArticles,
-    },
+      ListArticles
+    }
   };
 </script>
